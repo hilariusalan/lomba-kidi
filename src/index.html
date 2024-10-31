@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <script src="/layout/js/kotak.js"></script>
+    <script src="/layout/js/index.js"></script>
+    <link rel="stylesheet" href="/src/input.css">
+    <link rel="stylesheet" href="/dist/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="/layout/css/index.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Nova Assistant</title>
+</head>
+<body class="overflow-x-hidden">
+    <div id="HomePage" class="overflow-hidden max-w-full h-screen bg-gradient-to-tr from-black via-slate-900 lg:bg-transparent sm:background-animate md:background-animate bg-teal-800 md:background-animate sm:background-animate">
+        <!-- Video Source: https://youtu.be/XtEtjFcTrJM?si=bMaqcG5ajfEfifht -->
+        <video autoplay muted loop src="/assets/video/background.mp4" class="lg:flex hidden w-full bg-center min-h-full bg-repeat bg-gradient-to-t from-black via-slate-950 to-slate-900 bg-opacity-85 backdrop-blur-lg -z-50 absolute">
+        </video>
+        <!-- Navbar -->
+            <header class="nav flex w-full justify-between px-8 py-3 lg:py-5 lg:px-12 z-[100] fixed"> 
+                <!-- Logo -->
+                <div class="logo">
+                    <img src="/assets/img/nova.png" width="100px" alt="nova">
+                </div>
+            
+                <!-- Navigation Menu -->
+                <div class="hidden lg:flex md:flex" id="nav-menu">
+                    <div class="flex transition duration-300 hover:bg-slate-800 hover:bg-opacity-80 p-1.5 hover:rounded-lg px-3">
+                        <a href="#PageHome" id="feature" class="text-gray-400 text-base font-semibold px-2 hover:text-white" title="Return to the main page">Home</a>
+                    </div>
+                    <div class="flex transition duration-300 hover:bg-slate-800 hover:bg-opacity-80 p-1.5 hover:rounded-lg px-3">
+                        <a href="#PageLayanan" class="text-gray-400 text-base font-semibold px-2 hover:text-white" title="View the features we offer">Features</a>
+                    </div>
+                    <div class="flex transition duration-300 hover:bg-slate-800 hover:bg-opacity-80 p-1.5 hover:rounded-lg px-3">
+                        <a href="#PageProjek" class="text-gray-400 text-base font-semibold px-2 hover:text-white" title="View the projects we have completed">Projects</a>
+                    </div>
+                    <div class="flex transition duration-300 hover:bg-slate-800 hover:bg-opacity-80 hover:rounded-lg px-3">
+                        <a href="#Support" class="text-gray-400 text-base font-semibold px-2 p-1.5 hover:text-white" title="Get help and support">Support<i class="fa-sharp fa-solid fa-circle-question px-2 text-base"></i></a>
+                    </div>
+                </div>
+            
+                <!-- Login & Signup -->
+                <div class="login flex">         
+                    <a href="#" class="text-base hover:bg-gray-800 p-1.5 px-2 mx-1 hover:rounded-md transition duration-300 text-slate-400 hover:text-white font-semibold"  onclick="popUp()" title="Log into your account">Sign in</a>
+                    <a href="#" class="text-base px-2 mx-1 text-black bg-white hover:opacity-75 transition duration-300 p-1 rounded-md font-semibold" title="Create a new account">Sign Up</a>
+                </div> 
+            </header>
+            
+
+    <!-- Home -->
+    <section id="PageHome" class=" max-w-full sm:pt-44 lg:pt-40 pl-12 pt-44 md:pt-48 md:px-20 lg:px-24 sm:py-20 sm:px-24 Layout">
+    <h1 class="animate__animated animate__fadeIn animation-duration-1000 font-semibold sm:text-4xl md:text-5xl text-3xl lg:text-8xl pb-5 text-white">AI Asisstant <br> For Your Solution.</h1>
+    <h3 class="animate__animated animate__fadeIn animation-duration-1000 text-gray-300 font-normal text-base lg:text-2xl">Find all the solutions and solve your <br> problems with Nova Assistant.</h3>  
+    <div class="flex my-10">
+        <a href="#PageLayanan" class="animate__animated animate__fadeIn animation-duration-1000 text-gray-800 bg-gray-200 py-4 md:px-8 px-3 lg:px-4 rounded-3xl font-semibold hover:bg-gray-500 sm:text-base md:text-base lg:text-base text-sm transition duration-500 cursor-pointer hover:border-gray-100 ">Start Now <i class="fa-solid fa-arrow-right fa-rotate-by  " style="--fa-rotate-angle: -45deg;"></i></a>
+        <a href="notfound.html" onmouseover="Arrow()" onmouseleave="ArrowOf()" class="animate__animated animate__fadeIn animation-duration-1000 text-white sm:text-base md:text-base lg:text-base text-sm font-semibold py-4 px-4 hover:none hover:underline cursor-pointer md:block lg:block sm:block hidden">Download Apps <i id="arrow" class="fa-solid px-2 fa-arrow-right"></i></a>
+     </div>
+    </section>
+    <div behavior="" direction="" class="marquee h-full mt-5 hidden lg:flex w-full bg-gradient-to-t">
+        <div class="flex track">
+            <div class="flex px-12" aria-hidden="true">
+                <img src="/assets/img/output-onlinepngtools.png" width="50px" class="grayscale" alt="">
+                <p class="text-3xl font-semibold text-white p-2">ChatGPT</p>
+            </div>
+            <div class="flex px-12">
+                <img src="/assets/img/bing.png" width="50px" alt="">
+                <p class="text-3xl font-semibold text-white p-2">Bing</p>
+            </div>
+            <div class="flex px-12">
+                <img src="/assets/img/Gemini1.png" width="50px" alt="">
+                <p class="text-3xl font-semibold text-white p-2">Gemini</p>
+            </div>
+            <div class="flex px-12">
+                <img src="/assets/img/copilot.png" width="50px" alt="">
+                <p class="text-3xl font-semibold text-white p-2">Copilot</p>
+            </div>
+            <div class="flex px-12">
+                <img src="/assets/img/perplexity.png" width="50px" alt="">
+                <p class="text-3xl font-semibold text-white p-2">Perplexity</p>
+            </div>
+            <div class="flex px-12">
+                <img src="/assets/img/devin.png" width="50px" alt="">
+                <p class="text-3xl font-semibold text-white p-2">Devin</p>
+            </div>
+
+            <div class="flex px-12" aria-hidden="true">
+                <img src="/assets/img/output-onlinepngtools.png" width="50px" class="grayscale" alt="">
+                <p class="text-3xl font-semibold text-white p-2">ChatGPT</p>
+            </div>
+            <div class="flex px-12">
+                <img src="/assets/img/bing.png" width="50px" alt="">
+                <p class="text-3xl font-semibold text-white p-2">Bing</p>
+            </div>
+            <div class="flex px-12">
+                <img src="/assets/img/Gemini1.png" width="50px" alt="">
+                <p class="text-3xl font-semibold text-white p-2">Gemini</p>
+            </div>
+            <div class="flex px-12">
+                <img src="/assets/img/copilot.png" width="50px" alt="">
+                <p class="text-3xl font-semibold text-white p-2">Copilot</p>
+            </div>
+            <div class="flex px-12">
+                <img src="/assets/img/perplexity.png" width="50px" alt="">
+                <p class="text-3xl font-semibold text-white p-2">Perplexity</p>
+            </div>
+            <div class="flex px-12">
+                <img src="/assets/img/devin.png" width="50px" alt="">
+                <p class="text-3xl font-semibold text-white p-2">Devin</p>
+            </div>
+
+            <div class="flex px-12" aria-hidden="true">
+                <img src="/assets/img/output-onlinepngtools.png" width="50px" class="grayscale" alt="">
+                <p class="text-3xl font-semibold text-white p-2">ChatGPT</p>
+            </div>
+            <div class="flex px-12">
+                <img src="/assets/img/bing.png" width="50px" alt="">
+                <p class="text-3xl font-semibold text-white p-2">Bing</p>
+            </div>
+            <div class="flex px-12">
+                <img src="/assets/img/Gemini1.png" width="50px" alt="">
+                <p class="text-3xl font-semibold text-white p-2">Gemini</p>
+            </div>
+            <div class="flex px-12">
+                <img src="/assets/img/copilot.png" width="50px" alt="">
+                <p class="text-3xl font-semibold text-white p-2">Copilot</p>
+            </div>
+            <div class="flex px-12">
+                <img src="/assets/img/perplexity.png" width="50px" alt="">
+                <p class="text-3xl font-semibold text-white p-2">Perplexity</p>
+            </div>
+            <div class="flex px-12">
+                <img src="/assets/img/devin.png" width="50px" alt="">
+                <p class="text-3xl font-semibold text-white p-2">Devin</p>
+            </div>
+        </div>  
+    </div>
+        </div>
+
+
+        <!-- Page ke 2 -->
+         <section id="PageLayanan" class="max-w-full bg-gradient-to-b from-gray-950 via-gray-900 to-gray-800 pb-16 pt-32">
+            <div class="">
+                <p class="pb-6 font-semibold text-lg text-center bg-clip-text text-transparent bg-gradient-to-br from-indigo-600 via-sky-500 to-sky-300">Features</p>
+                <h1 class=" lg:text-5xl md:text-3xl text-2xl font-semibold text-center  text-transparent bg-gradient-to-br from-gray-400 to-gray-100 bg-clip-text">Let's start with some of <br> the features we have!</h1>
+            </div>
+            <div class="flex justify-center">
+                <div class="container flex justify-around lg:w-[75%] sm:w-[80%] md:w-full w-[80%] flex-wrap">
+                    <!-- Schadule Reminder -->
+                     <div class="lg:w-[55%] md:w-[50%] bg-gradient-to-tl rounded-md from-gray-900 via-blue-800 to-blue-700 pt-5  mt-10">
+                        <div class="justify-center flex">
+                            <h1 class="font-semibold text-1xl lg:text-2xl text-white px-5 pb-6">Accurate schedule reminders</h1>
+                      
+                        </div>
+                        <p class="lg:text-base md:text-[16px] font-medium sm:px-10 text-white max-w-full px-6 text-left">Nova ensures you don't miss a single important appointment or activity with its highly accurate schedule reminder feature.</p>
+                        <div class="flex justify-end">
+                            <img src="/assets/img/Schedule.jpg" width="600px" alt="" class="pt-8 lg:w-[590px] rounded-md md:w-[350px] sm:w-[500px] w-[400px]">
+                        </div>
+                     </div>
+    
+                     <!-- Circular Progres -->
+                      <div class="lg:w-[40%] md:w-[45%] sm:w-full border-slate-600 rounded-xl border mt-10 bg-gradient-to-tl from-black via-slate-950 to-slate-800">
+                          <h1 class="text-white px-8 md:px-5 pt-7 text-2xl sm:px-8 font-semibold">Best Performance</h1>
+                          <p class="py-4 font-semibold text-gray-300 md:px-5 text-sm md:text-sm sm:px-8 px-8 ">Nova is designed to provide optimal performance in every situation.</p>
+                          <a href="#HomePage" class="lg:px-5 md:px-5 px-8 sm:px-8 font-semibold  text-white hover:text-gray-300">Read More <i id="arrow" class="fa-solid px-2 fa-arrow-right text-xs"></i></a>
+                          <div class="flex justify-center lg:pt-16 md:pt-6 pt-0 sm:pt-8 lg:pb-0 md:pb-0 sm:pb-10 pb-10">
+                              <div class="w-48 h-48 relative">
+                                    <div class="h-48 w-48 rounded-full shadow-sm shadow-blue-500">
+                                        <div class="h-[190px] w-[190px] rounded-full flex justify-center items-center">
+                                            <div id="nomer" class="text-white font-medium text-2xl">100</div>
+                                        </div>
+                                    </div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px" class="absolute top-4 left-4">
+                                      <defs>
+                                          <stop offset="0%" stop-color="#e91e63" />
+                                          <stop offset="100%" stop-color="#673ab7" />
+                                      </defs>
+                                      <circle cx="80" cy="80" r="70" stroke-linecap="round" />
+                                  </svg>
+                              </div>  
+                              <div>
+
+                              </div>
+                              
+                          </div>
+                          </div>
+                     </div>
+                </div>
+             </section>
+
+             <!-- Page 3 -->
+                <section id="PageProjek" class="p-1 pt-28 bg-black opacity-99">
+                    <div class="project text-white px-16">
+                        <p class="pb-6 font-semibold text-lg bg-clip-text text-transparent bg-gradient-to-br from-indigo-600 via-sky-500 to-sky-300">Project</p>
+                        <h1 class="animate__animated animate__fadeIn animation-duration-1000 lg:text-3xl font-bold pb-5 md:text-3xl sm:text-2xl text-xl">Finish your work quickly.</h1>
+                        <p class="lg:text-lg font-regular pb-5 md:text-lg sm:text-base text-sm text-gray-600 lg:w-[45%] md:w-[60%]">Lorem ipsum dolor sit amet consectetur adipisicing elit Eligendi tempore, alias fuga ducimus nostrum quasi commodi.</p>
+                    </div>
+                
+                    <!-- Gambar bergerak baris pertama -->
+                    <div class="bg-gradient-to-b relative overflow-hidden max-w-full h-screen from-black w-full">
+                        <div class="image flex pt-28 z-50 track px-5">
+                            <div class="flex gap-3">
+                                <img src="/assets/img/img1.jpg" width="300px" alt="" class="rounded-xl lg:w-[300px] md:w-[250px] sm:w-[220px] w-[200px] !important;">
+                                <img src="/assets/img/img2.jpg" width="300px" alt="" class="rounded-xl lg:w-[300px] md:w-[250px] sm:w-[220px] w-[200px] !important;">
+                                <img src="/assets/img/img3.jpg" width="300px" alt="" class="rounded-xl lg:w-[300px] md:w-[250px] sm:w-[220px] w-[200px] !important;">
+                                <img src="/assets/img/img1.jpg" width="300px" alt="" class="rounded-xl lg:w-[300px] md:w-[250px] sm:w-[220px] w-[200px] !important;">
+                                <img src="/assets/img/img2.jpg" width="300px" alt="" class="rounded-xl lg:w-[300px] md:w-[250px] sm:w-[220px] w-[200px] !important;">
+                                <img src="/assets/img/img3.jpg" width="300px" alt="" class="rounded-xl lg:w-[300px] md:w-[250px] sm:w-[220px] w-[200px] !important;">
+                                <img src="/assets/img/img1.jpg" width="300px" alt="" class="rounded-xl lg:w-[300px] md:w-[250px] sm:w-[220px] w-[200px] !important;">
+                                <img src="/assets/img/img2.jpg" width="300px" alt="" class="rounded-xl lg:w-[300px] md:w-[250px] sm:w-[220px] w-[200px] !important;">
+                                <img src="/assets/img/img3.jpg" width="300px" alt="" class="rounded-xl lg:w-[300px] md:w-[250px] sm:w-[220px] w-[200px] !important;">
+                                <img src="/assets/img/img1.jpg" width="300px" alt="" class="rounded-xl lg:w-[300px] md:w-[250px] sm:w-[220px] w-[200px] !important;">
+                                <img src="/assets/img/img2.jpg" width="300px" alt="" class="rounded-xl lg:w-[300px] md:w-[250px] sm:w-[220px] w-[200px] !important;">
+                                <img src="/assets/img/img3.jpg" width="300px" alt="" class="rounded-xl lg:w-[300px] md:w-[250px] sm:w-[220px] w-[200px] !important;">
+                                <img src="/assets/img/img1.jpg" width="300px" alt="" class="rounded-xl lg:w-[300px] md:w-[250px] sm:w-[220px] w-[200px] !important;">
+                                <img src="/assets/img/img2.jpg" width="300px" alt="" class="rounded-xl lg:w-[300px] md:w-[250px] sm:w-[220px] w-[200px] !important;">
+                                <img src="/assets/img/img3.jpg" width="300px" alt="" class="rounded-xl lg:w-[300px] md:w-[250px] sm:w-[220px] w-[200px] !important;">
+                                <img src="/assets/img/img1.jpg" width="300px" alt="" class="rounded-xl lg:w-[300px] md:w-[250px] sm:w-[220px] w-[200px] !important;">
+                                <img src="/assets/img/img2.jpg" width="300px" alt="" class="rounded-xl lg:w-[300px] md:w-[250px] sm:w-[220px] w-[200px] !important;">
+                                <img src="/assets/img/img3.jpg" width="300px" alt="" class="rounded-xl lg:w-[300px] md:w-[250px] sm:w-[220px] w-[200px] !important;">
+                            </div>
+                        </div>
+                    
+                    </div>
+                </section>
+
+                <section class="min-h-screen flex flex-col bg-gradient-to-b from-black  to-blue-950">
+                    <!-- Main Content -->
+                    <main class="flex-grow text-center container mx-auto px-4">
+                        <h2 class="lg:text-6xl md:text-5xl text-3xl sm:text-4xl font-bold text-purple-200 mb-7 ">Start with Nova Asisstant</h2>
+                        <p class="text-lg text-gray-500">
+                            Make everything easier with Nova Asisstannt.
+                        </p>
+                        <a href="notfound.html"> 
+                            <button
+                                class="flex justify-center gap-2 items-center mt-10 mx-auto shadow-xl text-lg bg-gray-50 backdrop-blur-md lg:font-semibold isolation-auto border-gray-50 before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-left-full before:hover:left-0 before:rounded-full before:bg-blue-500 hover:text-gray-50 before:-z-10 before:aspect-square before:hover:scale-150 before:hover:duration-700 relative z-10 px-4 py-2 overflow-hidden border-2 rounded-full group"
+                                type="button" 
+                            >
+                                Start
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 16 19"
+                                    class="w-8 h-8 justify-end group-hover:rotate-90 group-hover:bg-gray-50 text-gray-50 ease-linear duration-300 rounded-full border border-gray-700 group-hover:border-none p-2 rotate-45"
+                                >
+                                    <path
+                                        class="fill-gray-800 group-hover:fill-gray-800"
+                                        d="M7 18C7 18.5523 7.44772 19 8 19C8.55228 19 9 18.5523 9 18H7ZM8.70711 0.292893C8.31658 -0.0976311 7.68342 -0.0976311 7.29289 0.292893L0.928932 6.65685C0.538408 7.04738 0.538408 7.68054 0.928932 8.07107C1.31946 8.46159 1.95262 8.46159 2.34315 8.07107L8 2.41421L13.6569 8.07107C14.0474 8.46159 14.6805 8.46159 15.0711 8.07107C15.4616 7.68054 15.4616 7.04738 15.0711 6.65685L8.70711 0.292893ZM9 18L9 1H7L7 18H9Z"
+                                    ></path>
+                                </svg>
+                            </button>
+                        </a>
+                    </main>
+                    
+            
+                
+                <!-- Footer -->
+                <footer id="Bantuan" class="bg-black text-white mt-auto">
+                    <div class="container mx-auto px-6 py-8">
+                        <div class="flex flex-wrap justify-between">
+                            <!-- About Section -->
+                            <div class="w-full md:w-1/3 mb-6">
+                              <img src="/assets/img/nova.png" width="100px" class="pb-4" alt="">
+                                <p class="text-gray-400">
+                                    Dedicated to innovation and optimal performance.
+                                </p>
+                                </ul>
+                            </div>
+            
+                            <!-- Links Section -->
+                            <div class="w-full md:w-1/3 mb-6">
+                                <h3 class="font-bold text-lg mb-2">Navigation</h3>
+                                <ul class="text-gray-400">
+                                    <li class="mb-2">
+                                        <a href="#" class="hover:text-blue-400">Home</a>
+                                    </li>
+                                    <li class="mb-2">
+                                        <a href="#" class="hover:text-blue-400">Features</a>
+                                    </li>
+                                    <li class="mb-2">
+                                        <a href="#" class="hover:text-blue-400">Project</a>
+                                    </li>
+                                    <li class="mb-2">
+                                        <a href="#" class="hover:text-blue-400">Call Us</a>
+                                    </li>
+                                </ul>
+                            </div>
+            
+                            <!-- Contact Section -->
+                            <div class="w-full md:w-1/3 mb-6">
+                                <h3 class="font-bold text-lg mb-2">Call Us</h3>
+                                <ul class="text-gray-400 space-x-4 cursor-pointer">
+                                    <li  class="fa-brands fa-instagram"></li>
+                                    <li class="fa-brands fa-x-twitter"></li>
+                                    <li class="fa-brands fa-youtube"></li>
+                                    <li class="fa-brands fa-linkedin"></li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <hr class="border-gray-700 my-6">
+            
+                        <div class="flex justify-between items-center text-gray-400">
+                            <p>&copy; 2024 Nova Assistant. All rights reserved.</p>
+                            <div class="flex space-x-4">
+                                <a href="#" class="hover:text-blue-400">Privacy</a>
+                                <a href="#" class="hover:text-blue-400">Terms</a>
+                                <a href="#" class="hover:text-blue-400">Cookie Policy   </a>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </section>
+
+</body>
+</html>
